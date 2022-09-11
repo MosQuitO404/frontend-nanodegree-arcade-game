@@ -89,19 +89,15 @@ Player.prototype.handleInput = function(direction) {
     if (this.y > 0) {
         if (direction == 'left' && this.x > 0) {
             this.x -= this.columnWidth;
-            console.log(this.x);
         }
         else if (direction == 'right' && this.x < this.gameAresWidth) {
             this.x += this.columnWidth;
-            console.log(this.x);
         }
         else if (direction == 'up' && this.y > 0) {
             this.y -= this.rowHeight + this.shiftY;
-            console.log(this.y);
         }
         else if (direction == 'down' && this.y < this.gameAreaHeight) {
             this.y += this.rowHeight + this.shiftY;
-            console.log(this.y);
         }
     
         this.winReset();   
